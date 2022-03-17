@@ -3,9 +3,7 @@ server:
   
 spring:
   application:
-    name: configserver
-  profiles:
-    active: dev
+    name: config-server
   cloud:
     config:
       server:
