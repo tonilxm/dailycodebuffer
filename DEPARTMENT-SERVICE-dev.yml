@@ -14,10 +14,10 @@ resilience4j.circuitbreaker:
       failureRateThreshold: 50
       slowCallRateThreshold: 80
       slowCallDurationThreshold: 2s
-      minimumNumberOfCalls: 10
+      minimumNumberOfCalls: 5
       slidingWindowSize: 10
-      permittedNumberOfCallsInHalfOpenState: 5
-      waitDurationInOpenState: 10s
+      permittedNumberOfCallsInHalfOpenState: 3
+      waitDurationInOpenState: 8s
       automaticTransitionFromOpenToHalfOpenEnabled: false
       recordExceptions:
         - org.springframework.web.client.HttpServerErrorException
